@@ -726,6 +726,9 @@
 
         var url;
         daum.maps.event.addListener(map, 'click', function (mouseEvent) {
+            console.log("hi");
+            console.log("ios : " + isMobile.iOS())
+            console.log("android : " + isMobile.Android())
             if (isMobile().iOS()) {
                 url = 'daummaps://search?q=W웨딩 목화웨딩컨벤션&p=35.188026, 129.080478'
             }

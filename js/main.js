@@ -1,9 +1,41 @@
+// 모바일 에이전트 구분
+var isMobile = {
+    Android: function () {
+             return navigator.userAgent.match(/Android/i) == null ? false : true;
+    },
+    BlackBerry: function () {
+             return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
+    },
+    IOS: function () {
+             return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+    },
+    Opera: function () {
+             return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
+    },
+    Windows: function () {
+             return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
+    },
+    any: function () {
+             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
 function openMap(platform) {
-    if (platform == "kakao") {
-        window.location = 'daummaps://place?id=24484800';
+    if (isMobile.any()) {
+        if (platform == "kakao") {
+            window.location = 'https://place.map.daum.net/24484800';
+        }
+        else {
+            window.location = 'https://map.naver.com/local/siteview.nhn?code=34177589';
+        }
     }
     else {
-        window.location = 'navermaps://?menu=location&pinType=place&lat=35.188026&lng=129.080478&title=W웨딩 목화웨딩컨벤션'
+        if (platform == "kakao") {
+            window.location = 'daummaps://place?id=24484800';
+        }
+        else {
+            window.location = 'navermaps://?menu=location&pinType=place&lat=35.188026&lng=129.080478&title=W웨딩 목화웨딩컨벤션'
+        }
     }
 }
 

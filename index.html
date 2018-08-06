@@ -24,7 +24,20 @@
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" media="screen"> </head>
-    <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic&amp;subset=korean" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic&amp;subset=korean" rel="stylesheet">
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7f8a0d9245932725b84c1878e3af3cb"></script>
+
+<script>
+    var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+    var options = { //지도를 생성할 때 필요한 기본 옵션
+        center: new daum.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+        level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new daum.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+</script>
+
 
 
 <body class="outside-bottom-bar-page">
@@ -151,8 +164,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '두번째 데이트');" href="./images/ourstory1.jpg"
-                                            class="magnific-zoom" title="두번째 데이트">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '두번째 데이트');" href="./images/ourstory1.jpg" class="magnific-zoom" title="두번째 데이트">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -187,8 +199,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '음악행사');" href="./images/ourstory3.jpg"
-                                            class="magnific-zoom" title="음악 행사">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '음악행사');" href="./images/ourstory3.jpg" class="magnific-zoom" title="음악 행사">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -223,8 +234,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '여행');" href="./images/ourstory2.jpg" class="magnific-zoom"
-                                            title="여행">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '여행');" href="./images/ourstory2.jpg" class="magnific-zoom" title="여행">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -260,8 +270,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '마스터');" href="./images/ourstory4.jpg" class="magnific-zoom"
-                                            title="마스터">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '마스터');" href="./images/ourstory4.jpg" class="magnific-zoom" title="마스터">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -297,8 +306,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '집 꾸미기');" href="./images/ourstory5.jpg"
-                                            class="magnific-zoom" title="집 꾸미기">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '집 꾸미기');" href="./images/ourstory5.jpg" class="magnific-zoom" title="집 꾸미기">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -334,8 +342,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '스토리', '클릭', '프로포즈');" href="./images/ourstory6.jpg"
-                                            class="magnific-zoom" title="프로포즈">
+                                        <a onclick="ga('send', 'event', '스토리', '클릭', '프로포즈');" href="./images/ourstory6.jpg" class="magnific-zoom" title="프로포즈">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -412,7 +419,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 animation fadeIn">
-                        <img src="./images/map.jpg" style="width: 100%; margin-bottom:20px;" />
+                        <div id="map" style="width:500px;height:400px;"></div>
                         <div class="de-icon circle small-size inline" style="background-color:#f0394d">
                             <i class="de-icon-address"></i>
                         </div>
@@ -465,8 +472,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '클릭해주셔서 고맙습니다');" href="./images/g1.jpg"
-                                            class="magnific-zoom-gallery" title="클릭해주셔서 고맙습니다.">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '클릭해주셔서 고맙습니다');" href="./images/g1.jpg" class="magnific-zoom-gallery" title="클릭해주셔서 고맙습니다.">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -483,8 +489,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '집에서 가져간 안경');" href="./images/g8.jpg" class="magnific-zoom-gallery"
-                                            title="집에서 가져간 안경">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '집에서 가져간 안경');" href="./images/g8.jpg" class="magnific-zoom-gallery" title="집에서 가져간 안경">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -501,8 +506,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', 'i love you');" href="./images/g3.jpg" class="magnific-zoom-gallery"
-                                            title="I Love You를 뜻합니다.">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', 'i love you');" href="./images/g3.jpg" class="magnific-zoom-gallery" title="I Love You를 뜻합니다.">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -519,8 +523,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '앉아있기 불편함');" href="./images/g4.jpg" class="magnific-zoom-gallery"
-                                            title="앉아있기 불편함">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '앉아있기 불편함');" href="./images/g4.jpg" class="magnific-zoom-gallery" title="앉아있기 불편함">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -537,8 +540,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '봐도봐도 좋은');" href="./images/g5.jpg" class="magnific-zoom-gallery"
-                                            title="봐도봐도 좋은">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '봐도봐도 좋은');" href="./images/g5.jpg" class="magnific-zoom-gallery" title="봐도봐도 좋은">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -555,8 +557,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '허허 저것 좀 보세요');" href="./images/g6.jpg"
-                                            class="magnific-zoom-gallery" title="허허 저것 좀 보세요">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '허허 저것 좀 보세요');" href="./images/g6.jpg" class="magnific-zoom-gallery" title="허허 저것 좀 보세요">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -573,8 +574,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '신부가 예쁘다');" href="./images/g7.jpg" class="magnific-zoom-gallery"
-                                            title="신부가 예쁘다">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '신부가 예쁘다');" href="./images/g7.jpg" class="magnific-zoom-gallery" title="신부가 예쁘다">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -591,8 +591,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '너무나 아름다운');" href="./images/g2.jpg" class="magnific-zoom-gallery"
-                                            title="너무나 아름다운">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '너무나 아름다운');" href="./images/g2.jpg" class="magnific-zoom-gallery" title="너무나 아름다운">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>
@@ -609,8 +608,7 @@
                             <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
                                 <div class="alignment">
                                     <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '긴 하루의 끝');" href="./images/g9.jpg" class="magnific-zoom-gallery"
-                                            title="긴 하루의 끝">
+                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '긴 하루의 끝');" href="./images/g9.jpg" class="magnific-zoom-gallery" title="긴 하루의 끝">
                                             <div class="de-icon circle light medium-size inline">
                                                 <i class="de-icon-zoom-in"></i>
                                             </div>

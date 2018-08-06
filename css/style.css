@@ -2530,6 +2530,10 @@ button.mfp-arrow, button.mfp-close {
         #bridesmaid-section, #gift-section, #groomsmen-section, #more-events, #rsvp-section {
             padding: 80px 0
         }
+
+        footer .image-divider.fixed-height {
+            /* background-size: contain; */
+        }
     }
     @media screen and (max-width:320px) {
         #save-the-date {
@@ -2559,9 +2563,9 @@ button.mfp-arrow, button.mfp-close {
         .couple-excerpt {
             margin-top: 20px
         }
-        footer .image-divider.fixed-height {
+        /* footer .image-divider.fixed-height {
             height: 400px
-        }
+        } */
         #thank-you {
             text-align: center;
             color: #FFF;

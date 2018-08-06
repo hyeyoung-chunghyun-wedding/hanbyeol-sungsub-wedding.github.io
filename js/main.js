@@ -1,38 +1,11 @@
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-
 function openMap(platform) {
-    if (isMobile.Android()) {
-        window.location = 'geo:35.188041,129.080485?q=목화웨딩컨벤션';
+    if (platform == "kakao") {
+        window.location = 'daummaps://place?id=24484800';
     }
     else {
-        if (platform == "kakao") {
-            window.location = 'daummaps://place?id=24484800';
-        }
-        else {
-            window.location = 'navermaps://?menu=location&pinType=place&lat=35.188026&lng=129.080478&title=W웨딩 목화웨딩컨벤션'
-        }
+        window.location = 'navermaps://?menu=location&pinType=place&lat=35.188026&lng=129.080478&title=W웨딩 목화웨딩컨벤션'
     }
 }
-
 
 function createMap() {
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
@@ -59,6 +32,6 @@ function createMap() {
     marker.setMap(map);
 }
 
-window.onload = function() {
+window.onload = function () {
     createMap()
 }

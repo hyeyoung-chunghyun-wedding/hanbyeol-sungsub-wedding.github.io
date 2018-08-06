@@ -13,6 +13,21 @@ a, body {
     color: #6a6a6a
 }
 
+.map-icon-row {
+    display: flex;
+}
+
+.map-icon-col {
+    flex: 50% !important;
+    font-size: 10px;
+    text-align: center;
+}
+
+.map-icon {
+    width: 40px;
+    height: 40px;
+}
+
 #nav-bar, img.fullwidth {
     width: 100%
 }

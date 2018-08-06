@@ -408,7 +408,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 animation fadeIn">
-                        <div id="map" style="width:500px;height:400px;"></div>
+                        <div id="map" style="width:100%;height:400px;"></div>
                         <div class="de-icon circle small-size inline" style="background-color:#f0394d">
                             <i class="de-icon-address"></i>
                         </div>
@@ -682,12 +682,19 @@
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = {
-                center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                center: new daum.maps.LatLng(35.188026, 129.080478), // 지도의 중심좌표
                 level: 3 // 지도의 확대 레벨
             };
+        // 지도를 클릭한 위치에 표출할 마커입니다
+        var marker = new daum.maps.Marker({
+            // 지도 중심좌표에 마커를 생성합니다 
+            position: map.getCenter()
+        });
+        // 지도에 마커를 표시합니다
 
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
         var map = new daum.maps.Map(mapContainer, mapOption); 
+        marker.setMap(map);
     </script>
 </body>
 

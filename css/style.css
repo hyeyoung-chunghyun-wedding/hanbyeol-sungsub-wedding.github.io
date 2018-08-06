@@ -15,6 +15,7 @@ a, body {
 
 .map-icon-row {
     display: flex;
+    margin-top: 15px;
 }
 
 .map-icon-col {

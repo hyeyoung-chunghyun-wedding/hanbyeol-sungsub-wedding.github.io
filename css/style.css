@@ -19,10 +19,10 @@ a, body {
 }
 
 .map-icon-col {
-    cursor: pointer;
     flex: 50% !important;
     font-size: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .map-icon {

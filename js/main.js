@@ -21,7 +21,7 @@ var isMobile = {
 };
 
 function openMap(platform) {
-    if (isMobile.any()) {
+    if (!isMobile.any()) {
         if (platform == "kakao") {
             window.location = 'https://place.map.daum.net/24484800';
         }

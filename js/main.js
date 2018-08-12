@@ -1,22 +1,22 @@
 // 모바일 에이전트 구분
 var isMobile = {
     Android: function () {
-             return navigator.userAgent.match(/Android/i) == null ? false : true;
+        return navigator.userAgent.match(/Android/i) == null ? false : true;
     },
     BlackBerry: function () {
-             return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
+        return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
     },
     IOS: function () {
-             return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
     },
     Opera: function () {
-             return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
+        return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
     },
     Windows: function () {
-             return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
+        return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
     },
     any: function () {
-             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
 
@@ -68,6 +68,66 @@ function createMap() {
     }
 }
 
+function openPhotoSwipe(p_index) {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    console.log(pswpElement);
+
+    // build items array
+    var items = [
+        {
+            src: 'images/g1.jpg',
+            w: 1200,
+            h: 828
+        },
+        {
+            src: 'images/g2.jpg',
+            w: 1200,
+            h: 826
+        },
+        {
+            src: 'images/g3.jpg',
+            w: 1200,
+            h: 1476
+        },
+        {
+            src: 'images/g4.jpg',
+            w: 1200,
+            h: 1745
+        },
+        {
+            src: 'images/g5.jpg',
+            w: 1200,
+            h: 873
+        },
+        {
+            src: 'images/g6.jpg',
+            w: 1200,
+            h: 830
+        },
+        {
+            src: 'images/g7.jpg',
+            w: 1200,
+            h: 1031
+        },
+        {
+            src: 'images/g8.jpg',
+            w: 1200,
+            h: 1600
+        }
+    ];
+
+    // define options (if needed)
+    var options = {
+        // optionName: 'option value'
+        // for example:
+        index: p_index // start at first slide
+    };
+
+    // Initializes and opens PhotoSwipe
+    var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+}
+
 window.onload = function () {
-    createMap()
+    createMap();
 }

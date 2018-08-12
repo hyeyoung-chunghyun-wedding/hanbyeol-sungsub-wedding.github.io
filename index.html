@@ -28,6 +28,23 @@
 
     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a7f8a0d9245932725b84c1878e3af3cb"></script>
     <script src="js/main.js"></script>
+
+    <!-- photo swipe -->
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="photo-swipe/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="photo-swipe/default-skin/default-skin.css">
+
+    <!-- Core JS file -->
+    <script src="photo-swipe/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="photo-swipe/photoswipe-ui-default.min.js"></script>
+
 </head>
 
 
@@ -264,155 +281,42 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g1.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '클릭해주셔서 고맙습니다');" href="./images/g1.jpg" class="magnific-zoom-gallery" title="클릭해주셔서 고맙습니다.">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g1.jpg" onclick="openPhotoSwipe(0)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g8.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '집에서 가져간 안경');" href="./images/g8.jpg" class="magnific-zoom-gallery" title="집에서 가져간 안경">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g2.jpg" onclick="openPhotoSwipe(1)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g3.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', 'i love you');" href="./images/g3.jpg" class="magnific-zoom-gallery" title="I Love You를 뜻합니다.">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g3.jpg" onclick="openPhotoSwipe(2)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g4.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '앉아있기 불편함');" href="./images/g4.jpg" class="magnific-zoom-gallery" title="앉아있기 불편함">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g4.jpg" onclick="openPhotoSwipe(3)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g5.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '봐도봐도 좋은');" href="./images/g5.jpg" class="magnific-zoom-gallery" title="봐도봐도 좋은">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g5.jpg" onclick="openPhotoSwipe(4)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g6.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '허허 저것 좀 보세요');" href="./images/g6.jpg" class="magnific-zoom-gallery" title="허허 저것 좀 보세요">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g6.jpg" onclick="openPhotoSwipe(5)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g7.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '신부가 예쁘다');" href="./images/g7.jpg" class="magnific-zoom-gallery" title="신부가 예쁘다">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g7.jpg" onclick="openPhotoSwipe(6)" alt="" class="hover-animation">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g2.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '너무나 아름다운');" href="./images/g2.jpg" class="magnific-zoom-gallery" title="너무나 아름다운">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/g9.jpg" alt="" class="hover-animation image-zoom-rotate">
-                            <div class="layer wh100 hidden-black-overlay hover-animation fade-in"> </div>
-                            <div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-                                <div class="alignment">
-                                    <div class="v-align center-middle">
-                                        <a onclick="ga('send', 'event', '갤러리', '클릭', '긴 하루의 끝');" href="./images/g9.jpg" class="magnific-zoom-gallery" title="긴 하루의 끝">
-                                            <div class="de-icon circle light medium-size inline">
-                                                <i class="de-icon-zoom-in"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="./images/g8.jpg" onclick="openPhotoSwipe(7)" alt="" class="hover-animation">
                         </div>
                     </div>
                 </div>
@@ -458,6 +362,74 @@
             </div>
         </div>
     </footer>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/pace/pace.min.js"></script>
     <script src="js/bootstrap/bootstrap.js"></script>

@@ -113,6 +113,11 @@ function openPhotoSwipe(p_index) {
             src: 'images/g8.jpg',
             w: 1200,
             h: 1600
+        },
+        {
+            src: 'images/g9.jpg',
+            w: 1200,
+            h: 1600
         }
     ];
 

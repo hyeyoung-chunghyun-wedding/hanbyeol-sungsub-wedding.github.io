@@ -3,7 +3,7 @@
 :root {
     --border-color: #66a5ad;
     --title-color: #07575b;
-    --subtitle-color: #5e979e;
+    --subtitle-color: #46777d;
     --before-heart: #ffb0b0;
     --after-heart: rgb(255, 60, 60);
 }
@@ -14,7 +14,7 @@
 }
 
 .menu-header {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nanum Myeongjo', serif;
     font-size: 26px;
     /* margin-top: 50px;
     margin-bottom: 30px; */
@@ -46,6 +46,7 @@ a, body {
 
 .map-help li {
     font-family: 'Nanum Gothic', sans-serif;
+    margin-bottom: 5px;
 }
 
 .map-icon {
@@ -1976,7 +1977,7 @@ footer .image-divider.fixed-height {
 #banner-date {
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing: 3px;
-    font-size: 16px
+    font-size: 17.5px;
 }
 
 .his-her-name {

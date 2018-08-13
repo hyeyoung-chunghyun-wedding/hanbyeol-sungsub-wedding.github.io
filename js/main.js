@@ -87,37 +87,37 @@ function openPhotoSwipe(p_index) {
         {
             src: 'images/g3.jpg',
             w: 1200,
-            h: 1476
+            h: 873
         },
         {
             src: 'images/g4.jpg',
             w: 1200,
-            h: 1745
+            h: 830
         },
         {
             src: 'images/g5.jpg',
             w: 1200,
-            h: 873
+            h: 800
         },
         {
             src: 'images/g6.jpg',
-            w: 1200,
-            h: 830
+            w: 1201,
+            h: 1032
         },
         {
             src: 'images/g7.jpg',
             w: 1200,
-            h: 1031
+            h: 1476
         },
         {
             src: 'images/g8.jpg',
             w: 1200,
-            h: 1600
+            h: 1800
         },
         {
             src: 'images/g9.jpg',
             w: 1200,
-            h: 1600
+            h: 1800
         }
     ];
 

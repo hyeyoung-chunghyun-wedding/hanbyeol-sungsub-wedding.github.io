@@ -8,14 +8,29 @@
     --after-heart: rgb(255, 60, 60);
 }
 
-.invitation {
+.when-where-banner h3 {
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.when-where-section {
+    margin-bottom: 0px !important;
+}
+
+.invitation p {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
+}
+
+.invitation span {
+    font-size: 20px;
 }
 
 .menu-header {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 26px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     /* margin-top: 50px;
     margin-bottom: 30px; */
 }
@@ -72,7 +87,7 @@ a, body {
 
 body {
     font-family: Arvo, 'Noto Sans KR', serif;
-    font-size: 15px
+    font-size: 17px
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1080,8 +1095,8 @@ a.de-button, input[type=submit], span.de-button {
 
 .banner-text, .banner-text.withlove {
     display: inline-block;
-    font-family: 'Nanum Myeongjo', 'Noto Sans KR', sans-serif;
-    margin: 30px auto;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
+    margin: 20px auto;
     text-align: center
 }
 

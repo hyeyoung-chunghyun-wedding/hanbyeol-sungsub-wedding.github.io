@@ -62,11 +62,6 @@ function createMap() {
         content: '<div style="width:150px;text-align:center;padding:6px 0;">목화웨딩홀 벨루스홀</div>'
     });
     infowindow.open(map, marker);
-
-    // if (isMobile.any()) {
-    //     map.setZoomable(false);
-    //     map.setDraggable(false);
-    // }
 }
 
 function openPhotoSwipe(p_index) {

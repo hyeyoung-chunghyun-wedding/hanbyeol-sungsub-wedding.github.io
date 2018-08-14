@@ -895,7 +895,7 @@ img.with-border {
 }
 
 .outside-bottom-bar-page #content {
-    margin-top: 145px
+    margin-top: 0px
 }
 
 .sidebar-wrapper {
@@ -2397,7 +2397,7 @@ button.mfp-arrow, button.mfp-close {
         padding: 100px 0 80px
     }
     .outside-bottom-bar-page #content {
-        margin-top: 100px
+        margin-top: 0px
     }
     .divider-wrapper {
         padding: 70px 0

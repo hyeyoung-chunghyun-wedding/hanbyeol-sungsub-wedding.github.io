@@ -13,9 +13,13 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.banner-text .party {
+    font-size: 16px;
+}
+
 .invitation p {
     font-family: 'Nanum Myeongjo', serif;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .invitation span {
@@ -2232,7 +2236,7 @@ button.mfp-arrow, button.mfp-close {
         width: 100%
     }
     .h1, h1 {
-        font-size: 2em
+        font-size: 1.8em
     }
 }
 
@@ -2593,7 +2597,7 @@ button.mfp-arrow, button.mfp-close {
             margin-bottom: 0
         }
         .h1, h1 {
-            font-size: 1.7em
+            font-size: 1.6em
         }
         #save {
             font-size: 50px;

@@ -59,7 +59,7 @@ function createMap() {
     marker.setMap(map);
 
     var infowindow = new daum.maps.InfoWindow({
-        content: '<div style="width:150px;text-align:center;padding:6px 0;">목화웨딩홀 벨루스홀</div>'
+        content: '<div style="width:150px;text-align:center;padding:6px 0;">W웨딩 목화웨딩컨벤션</div>'
     });
     infowindow.open(map, marker);
 }

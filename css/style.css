@@ -13,10 +13,6 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-.when-where-section {
-    margin-bottom: 0px !important;
-}
-
 .invitation p {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 16px;
@@ -895,7 +891,7 @@ img.with-border {
 }
 
 .outside-bottom-bar-page #content {
-    margin-top: 0px
+    margin-top: 145px
 }
 
 .sidebar-wrapper {
@@ -2241,6 +2237,9 @@ button.mfp-arrow, button.mfp-close {
 }
 
 @media screen and (max-width:991px) {
+    .when-where-section {
+        margin-bottom: 0px !important;
+    }
     #nav-bar, #nav-bar.bottom-bar.stick-it, #nav-bar.top-bar.stick-it {
         height: 100px
     }
@@ -2397,7 +2396,7 @@ button.mfp-arrow, button.mfp-close {
         padding: 100px 0 80px
     }
     .outside-bottom-bar-page #content {
-        margin-top: 0px
+        margin-top: 100px
     }
     .divider-wrapper {
         padding: 70px 0

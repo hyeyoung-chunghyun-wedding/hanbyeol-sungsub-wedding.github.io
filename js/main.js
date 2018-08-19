@@ -57,6 +57,7 @@ function createMap() {
     var map = new daum.maps.Map(mapContainer, mapOption);
     map.setZoomable(false);
     map.setDraggable(false);
+    daum.maps.event.preventMap();
 
     var markerPosition = new daum.maps.LatLng(35.188026, 129.080478);
 

@@ -40,37 +40,29 @@ function openMap(platform) {
 }
 
 function createMap() {
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-        mapOption = {
-            center: new daum.maps.LatLng(35.188026, 129.080478), // 지도의 중심좌표
-            level: 4, // 지도의 확대 레벨
-            draggable: false,
-            scrollwheel: false,
-            disableDoubleClick: false,
-            disableDoubleClickZoom: false
-        };
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    var map = new daum.maps.StaticMap(mapContainer, mapOption);
-
     var markerPosition = new daum.maps.LatLng(35.188026, 129.080478);
 
     // 지도를 클릭한 위치에 표출할 마커입니다
-    var marker = new daum.maps.Marker({
-        // 지도 중심좌표에 마커를 생성합니다 
-        position: markerPosition
-    });
-    // 지도에 마커를 표시합니다
-    marker.setMap(map);
+    var markers = [
+        {
+            position: markerPosition,
+            text: 'W웨딩 목화웨딩컨벤션'
+        }
+    ]
 
-    var infowindow = new daum.maps.InfoWindow({
-        content: '<div style="width:150px;text-align:center;padding:6px 0;">W웨딩 목화웨딩컨벤션</div>'
-    });
-    infowindow.open(map, marker);
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = {
+            center: new daum.maps.LatLng(35.188026, 129.080478), // 지도의 중심좌표
+            level: 4, // 지도의 확대 레벨,
+            marker:markers
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new daum.maps.StaticMap(mapContainer, mapOption);
 }
 
 function openPhotoSwipe(p_index) {
     var pswpElement = document.querySelectorAll('.pswp')[0];
-    console.log(pswpElement);
 
     // build items array
     var items = [

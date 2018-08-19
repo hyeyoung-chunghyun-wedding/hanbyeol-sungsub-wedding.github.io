@@ -49,15 +49,8 @@ function createMap() {
             disableDoubleClick: false,
             disableDoubleClickZoom: false
         };
-
-    mapContainer.addEventListener('touchmove', function(e) {
-        
-    }, true);
     // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-    var map = new daum.maps.Map(mapContainer, mapOption);
-    map.setZoomable(false);
-    map.setDraggable(false);
-    daum.maps.event.preventMap();
+    var map = new daum.maps.StaticMap(mapContainer, mapOption);
 
     var markerPosition = new daum.maps.LatLng(35.188026, 129.080478);
 

@@ -25,6 +25,11 @@
 .invitation p {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 17px;
+    letter-spacing: -0.9px;
+}
+
+.invitation .parents {
+    margin-top: 45px !important;
 }
 
 .invitation span {

@@ -67,49 +67,49 @@ function openPhotoSwipe(p_index) {
     // build items array
     var items = [
         {
-            src: 'images/g1.jpg',
-            w: 1200,
-            h: 828
-        },
-        {
-            src: 'images/g2.jpg',
-            w: 1200,
-            h: 826
-        },
-        {
-            src: 'images/g3.jpg',
-            w: 1200,
-            h: 873
-        },
-        {
-            src: 'images/g4.jpg',
-            w: 1200,
-            h: 830
-        },
-        {
-            src: 'images/g5.jpg',
-            w: 1200,
-            h: 800
-        },
-        {
-            src: 'images/g6.jpg',
-            w: 1201,
-            h: 1032
-        },
-        {
-            src: 'images/g7.jpg',
+            src: 'images/1.jpg',
             w: 1200,
             h: 1476
         },
         {
-            src: 'images/g8.jpg',
+            src: 'images/2.jpg',
+            w: 1201,
+            h: 1032
+        },
+        {
+            src: 'images/3.jpg',
             w: 1200,
             h: 1800
         },
         {
-            src: 'images/g9.jpg',
+            src: 'images/4.jpg',
             w: 1200,
-            h: 1800
+            h: 812
+        },
+        {
+            src: 'images/5.jpg',
+            w: 1200,
+            h: 826
+        },
+        {
+            src: 'images/6.jpg',
+            w: 1200,
+            h: 830
+        },
+        {
+            src: 'images/7.jpg',
+            w: 1200,
+            h: 800
+        },
+        {
+            src: 'images/8.jpg',
+            w: 1200,
+            h: 796
+        },
+        {
+            src: 'images/9.jpg',
+            w: 915,
+            h: 1394
         }
     ];
 

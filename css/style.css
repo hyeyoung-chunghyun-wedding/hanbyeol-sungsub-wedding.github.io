@@ -1808,77 +1808,8 @@ option {
     color: #fff
 }
 
-#counting-down, #thank-you {
+#thank-you {
     text-align: center
-}
-
-.message .bg-danger {
-    background-color: #f0394d
-}
-
-.message .bg-success {
-    background-color: #6a6a6a
-}
-
-form .has-error .btn-primary {
-    border-color: #f397a1
-}
-
-.has-error .form-control {
-    border-color: #f397a1;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
-}
-
-.has-error .form-control:focus {
-    border-color: #f397a1;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #f397a1;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #f397a1
-}
-
-
-.couple-excerpt {
-    margin-top: 40px;
-    margin-bottom: 40px
-}
-
-.simple-countdown {
-    width: 250px;
-    margin: 25px auto 0
-}
-
-.simple-countdown.is-countdown {
-    border: none;
-    background-color: transparent;
-    color: #FFF;
-    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
-    font-size: 13px
-}
-
-.simple-countdown .countdown-amount, .simple-countdown .countdown-period {
-    font-size: 18px;
-    display: inline-block
-}
-
-.simple-countdown .countdown-amount {
-    letter-spacing: 2px
-}
-
-#the-wedding {
-    padding: 140px 0
-}
-
-#the-wedding h4 {
-    font-size: 17px
-}
-
-.wedding-item {
-    margin-bottom: 40px
-}
-
-#rsvp {
-    padding: 85px 0;
-    background-color: #FFF
 }
 
 footer .image-divider.fixed-height {
@@ -1890,11 +1821,6 @@ footer .image-divider.fixed-height {
     font-family: 'Nanum Myeongjo';
     margin-top: 40px;
     margin-bottom: 25px
-}
-
-#thank, #you {
-    font-size: 55px;
-    line-height: 45px
 }
 
 #footer-couple-name {
@@ -1918,16 +1844,6 @@ footer .image-divider.fixed-height {
     vertical-align: top
 }
 
-.rsvp-wrapper {
-    padding: 35px 20px 20px 25px;
-    border: 1px solid #ccc;
-    border-radius: 10px
-}
-
-.blog-wrapper, .bridesmaid-wrapper, .groomsmen-wrapper {
-    margin-bottom: 40px
-}
-
 #invited {
     font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
     font-size: 36px;
@@ -1940,76 +1856,11 @@ footer .image-divider.fixed-height {
     font-size: 17.5px;
 }
 
-.his-her-name {
-    position: relative
-}
-
-.his-her-name h2 {
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 20px
-}
-
-.his-her-name .last-name {
-    font-family: 'Nanum Gothic', cursive;
-    font-size: 24px;
-    display: block;
-    margin-top: 0
-}
-
-.story-date .date-only, .story-date .month-year {
-    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
-    color: #FFF
-}
-
-.his-her-name .heart-wrapper {
-    position: absolute;
-    right: -50px;
-    top: -20px;
-}
-
-.his-her-name .custom-heart {
-    background-color: #f0394d;
-    width: 65px;
-    height: 65px;
-    line-height: 65px;
-    font-size: 26px
-}
-
 #invitation {
     padding: 140px 0
 }
 
-.story-row.row {
-    display: table;
-    padding: 50px 0;
-    position: relative
-}
 
-.story-row.row [class*=col-] {
-    float: none;
-    display: table-cell;
-    vertical-align: middle
-}
-
-.story-date-wrapper {
-    z-index: 1
-}
-
-.story-date {
-    float: left;
-    margin-left: 16px;
-    height: 85px;
-    width: 85px;
-    background-color: #f0394d;
-    border-radius: 50%
-}
-
-.story-date .date-only {
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 16px
-}
 
 .arrow-left, .arrow-right {
     width: 0;
@@ -2018,38 +1869,6 @@ footer .image-divider.fixed-height {
     border-bottom: 13px solid transparent;
     margin-bottom: 22px;
     margin-top: 30px
-}
-
-.story-date .month-year {
-    font-size: 16px
-}
-
-.arrow-right {
-    border-left: 13px solid #e1dddd;
-    float: right;
-    margin-left: 10px
-}
-
-.arrow-left {
-    border-right: 13px solid #e1dddd;
-    float: left;
-    margin-right: 10px
-}
-
-.vertical-line {
-    position: absolute;
-    height: 100%;
-    width: 1px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-left: 1px solid #e1dddd
-}
-
-#end-of-story {
-    margin-top: 130px
 }
 
 #where-when {
@@ -2078,50 +1897,6 @@ footer .image-divider.fixed-height {
     margin-bottom: 30px
 }
 
-h2#dont-miss-it-title {
-    font-size: 42px;
-    margin-bottom: 30px;
-    font-family: 'Nanum Gothic', cursive
-}
-
-.circle-countdown {
-    width: 100%;
-    margin: 25px auto 0
-}
-
-.circle-countdown.is-countdown {
-    background-color: transparent;
-    border: none;
-    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif
-}
-
-.circle-countdown .countdown-amount {
-    background-color: #f0394d;
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    display: block;
-    padding-top: 22px;
-    font-size: 30px;
-    margin: 0 auto
-}
-
-.circle-countdown .countdown-period {
-    padding: 10px;
-    display: block;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase
-}
-
-#more-events {
-    padding: 140px 0
-}
-
-#events-carousel .item {
-    padding: 20px;
-    margin-bottom: 10px
-}
 
 #bridesmaid-section, #gift-section, #groomsmen-section, #rsvp-section {
     padding: 140px 0
@@ -2139,41 +1914,8 @@ h2#dont-miss-it-title {
     padding: 0 15px
 }
 
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 8px;
-    height: 8px;
-    margin: 5px 7px;
-    opacity: 1;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    background: #333
-}
-
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
     background: #f0394d
-}
-
-.mfp-bg {
-    z-index: 2000;
-    -webkit-transform: translateZ(0)
-}
-
-.mfp-wrap {
-    z-index: 2001
-}
-
-.mfp-content {
-    z-index: 2003
-}
-
-.mfp-preloader {
-    z-index: 2002
-}
-
-button.mfp-arrow, button.mfp-close {
-    z-index: 2003
 }
 
 @media screen and (max-width:1200px) {

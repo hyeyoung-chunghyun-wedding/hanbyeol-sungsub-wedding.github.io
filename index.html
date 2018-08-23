@@ -19,6 +19,22 @@
 
     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a7f8a0d9245932725b84c1878e3af3cb"></script>
     <script>
+
+        var background = document.getElementById('background');
+
+        // Fix background image jump on mobile
+        if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+            background.style.top = 'auto';
+            background.style.bottom = 0;
+
+            window.onresize = sizeBackground;
+            sizeBackground();
+        }
+
+        function sizeBackground() {
+            background.style.height = screen.height;
+        }
+
         // 모바일 에이전트 구분
         var isMobile = {
             Android: function () {
@@ -179,7 +195,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- 
         <ul class="slides">
             <li>
@@ -188,7 +204,7 @@
         </ul> -->
 
         <div class="bg-wrapper"></div>
-        
+
         <header id="nav-header">
             <nav id="nav-bar" class="bottom-bar outside fluid-width block-color nav-center sticky-nav animation fadeIn">
                 <div id="nav-wrapper">
@@ -488,13 +504,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
     <script type="text/javascript">
-		$(function(){
-			$('img.lazy').lazyload();
-		});
-	</script>
-    <script src="js/flexslider/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/main-slider-fade.js"></script>
+        $(function () {
+            $('img.lazy').lazyload();
+        });
+    </script>
+    <!-- <script src="js/flexslider/jquery.flexslider.js"></script> -->
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <!-- <script type="text/javascript" src="js/main-slider-fade.js"></script> -->
 </body>
 
 </html>

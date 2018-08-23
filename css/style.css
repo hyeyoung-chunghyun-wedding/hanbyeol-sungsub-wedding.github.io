@@ -1916,6 +1916,13 @@ footer .image-divider.fixed-height {
 }
 
 @media screen and (max-width:991px) {
+    #nav-header {
+        display: none;
+    }
+    #content {
+        margin-top: 0px !important;
+    }
+    
     .when-where-section {
         margin-bottom: 0px !important;
     }
@@ -2163,12 +2170,6 @@ footer .image-divider.fixed-height {
             height: 350px;
         }
 
-        #nav-header {
-            display: none;
-        }
-        #content {
-            margin-top: 0px !important;
-        }
         .banner-text.withlove {
             margin-top: 60px;
         }

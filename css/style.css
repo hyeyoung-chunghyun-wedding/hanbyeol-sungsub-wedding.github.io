@@ -8,6 +8,10 @@
     --after-heart: rgb(255, 60, 60);
 }
 
+#bg-div {
+    /* min */
+}
+
 #map {
     width: 100%;
     height: 500px;
@@ -836,26 +840,6 @@ img.with-border {
     background-repeat: no-repeat
 }
 
-#main-slider .video-audio-control {
-    height: 50px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 4;
-    padding-right: 10px;
-    text-align: right;
-    color: #FFF
-}
-
-.pink-heart, .video-divider {
-    z-index: 3;
-    position: relative
-}
-
-#main-slider .video-audio-control.mobile {
-    display: none
-}
-
 #content {
     position: relative;
     background-color: #f6f6f6
@@ -1079,7 +1063,11 @@ a.de-button, input[type=submit], span.de-button {
 .banner-text, .banner-text.withlove {
     display: inline-block;
     font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 20px;
     text-align: center
 }
 
@@ -1813,7 +1801,7 @@ option {
 }
 
 footer .image-divider.fixed-height {
-    height: 550px
+    height: 1000px
 }
 
 #thank-you {
@@ -1843,12 +1831,12 @@ footer .image-divider.fixed-height {
     width: 75%;
     vertical-align: top
 }
-
+/* 
 #invited {
-    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
+    font-family: 'Jua', 'Noto Sans KR', cursive;
     font-size: 36px;
-    margin-top: 70px
-}
+    margin-top: 20px
+} */
 
 #banner-date {
     font-family: 'Nanum Gothic', sans-serif;
@@ -2171,17 +2159,28 @@ footer .image-divider.fixed-height {
         }
     }
     @media screen and (max-width:480px) {
+        .when-where-banner {
+            margin-top: 20px;
+        }
+
         #map {
             height: 350px;
         }
+
+        #nav-header {
+            display: none;
+        }
+        #content {
+            margin-top: 0px !important;
+        }
         .banner-text.withlove {
-            margin-top: 50px;
+            margin-top: 60px;
         }
         .banner-text, .banner-text.withlove {
             margin-bottom: 15px;
         }
         #invited {
-            display: none
+            /* display: none */
         }
         #save-the-date {
             padding-right: 40px;
@@ -2277,7 +2276,7 @@ footer .image-divider.fixed-height {
             padding: 80px 0
         }
         footer .image-divider.fixed-height {
-            /* background-size: contain; */
+            height: 450px;
         }
     }
     @media screen and (max-width:320px) {

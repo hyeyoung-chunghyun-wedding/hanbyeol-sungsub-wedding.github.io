@@ -747,33 +747,6 @@ img.with-border {
     vertical-align: bottom
 }
 
-#save-the-date {
-    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
-    -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    padding-top: 100px;
-    padding-right: 50px;
-    margin-bottom: 20px
-}
-
-#save {
-    font-size: 75px;
-    line-height: 50px
-}
-
-#the-date {
-    font-size: 62px
-}
-
-#date {
-    font-size: 47px;
-    line-height: 40px
-}
-
-.pink-dot {
-    color: #f0394d
-}
 
 .slide-overlay {
     background-color: #000;
@@ -1602,10 +1575,6 @@ a:hover .de-icon.effect3 {
     transform: rotate(7deg) scale(1.1)
 }
 
-#counting-down, .couple-name {
-    -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg)
-}
 
 .masonry-col.w100 {
     width: 100%
@@ -1867,27 +1836,10 @@ form .has-error .btn-primary {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #f397a1
 }
 
-#couple {
-    padding: 140px 0 100px
-}
-
-.couple-name {
-    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
-    font-size: 41px;
-    padding-top: 100px;
-    color: #FFF;
-    line-height: 41px;
-    transform: rotate(-10deg)
-}
 
 .couple-excerpt {
     margin-top: 40px;
     margin-bottom: 40px
-}
-
-#down {
-    font-size: 55px;
-    line-height: 65px
 }
 
 .simple-countdown {
@@ -1936,9 +1888,6 @@ footer .image-divider.fixed-height {
 #thank-you {
     color: #FFF;
     font-family: 'Nanum Myeongjo';
-    /* -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); */
     margin-top: 40px;
     margin-bottom: 25px
 }
@@ -2620,11 +2569,7 @@ button.mfp-arrow, button.mfp-close {
         #thank-you {
             text-align: center;
             color: #FFF;
-            font-family: 'Nanum Gothic';
-            -ms-transform: rotate(-10deg);
-            -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-            padding-right: 30px;
+            font-family: 'Nanum Myeongjo';
             margin-top: 40px;
             margin-bottom: 25px
         }

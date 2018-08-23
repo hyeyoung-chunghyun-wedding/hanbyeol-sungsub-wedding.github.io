@@ -8,8 +8,8 @@
     --after-heart: rgb(255, 60, 60);
 }
 
-#bg-div {
-    /* min */
+#where-when .when-where-banner {
+    margin-top: 20px;
 }
 
 #map {
@@ -2159,10 +2159,6 @@ footer .image-divider.fixed-height {
         }
     }
     @media screen and (max-width:480px) {
-        .when-where-banner {
-            margin-top: 20px;
-        }
-
         #map {
             height: 350px;
         }

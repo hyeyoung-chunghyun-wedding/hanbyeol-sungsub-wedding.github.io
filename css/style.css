@@ -1823,7 +1823,7 @@ form .btn-primary {
 
 select option {
     padding: 4px 0!important
-}
+}ㄷ
 
 option {
     color: #747474
@@ -1840,7 +1840,6 @@ option {
 }
 
 #counting-down, #thank-you {
-    /* padding-right: 30px; */
     text-align: center
 }
 
@@ -1884,19 +1883,6 @@ form .has-error .btn-primary {
 .couple-excerpt {
     margin-top: 40px;
     margin-bottom: 40px
-}
-
-#counting-down {
-    color: #FFF;
-    font-family: 'Nanum Gothic', 'Noto Sans KR';
-    transform: rotate(-10deg);
-    margin-top: 0;
-    margin-bottom: 25px
-}
-
-#counting {
-    font-size: 65px;
-    line-height: 50px
 }
 
 #down {
@@ -2631,9 +2617,6 @@ button.mfp-arrow, button.mfp-close {
         .couple-excerpt {
             margin-top: 20px
         }
-        /* footer .image-divider.fixed-height {
-            height: 400px
-        } */
         #thank-you {
             text-align: center;
             color: #FFF;

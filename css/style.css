@@ -96,7 +96,7 @@ a, body {
 }
 
 body {
-    font-family: Arvo, 'Noto Sans KR', serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', serif;
     font-size: 17px
 }
 
@@ -152,7 +152,7 @@ h1.inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
 }
 
 p {
-    font-family: Arvo, 'Noto Sans KR', serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', serif;
     font-size: 15px;
     line-height: 26px;
     margin-bottom: 25px
@@ -257,7 +257,7 @@ img.with-border {
     list-style-type: none;
     margin: 0;
     padding: 45px 0 0;
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     font-size: 13px;
     z-index: 1000
 }
@@ -538,7 +538,7 @@ img.with-border {
 #side-nav-menu {
     position: relative;
     margin: 35px 35px 100px;
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     font-size: 14px;
     z-index: 1000
 }
@@ -612,7 +612,7 @@ img.with-border {
     border-radius: 0;
     background-color: #f0394d;
     text-align: center;
-    font-family: Arvo, 'Noto Sans KR', serif
+    font-family: 'Nanum Gothic', 'Noto Sans KR', serif
 }
 
 .css-logo.rounded {
@@ -748,7 +748,7 @@ img.with-border {
 }
 
 #save-the-date {
-    font-family: Pacifico, 'Noto Sans KR', cursive;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
     -ms-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
@@ -1099,7 +1099,7 @@ a.de-button, input[type=submit], span.de-button {
     display: inline-block;
     margin: 20px auto 0;
     background-color: #FFF;
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     border: 1px solid #6a6a6a
 }
 
@@ -1759,13 +1759,13 @@ a:hover .de-icon.effect3 {
 }
 
 form label {
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     font-size: 14px;
     font-weight: 400
 }
 
 .option-label, form .btn-primary {
-    font-family: Arvo, 'Noto Sans KR', serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', serif;
     color: #6a6a6a;
     font-size: 13px
 }
@@ -1840,7 +1840,7 @@ option {
 }
 
 #counting-down, #thank-you {
-    padding-right: 30px;
+    /* padding-right: 30px; */
     text-align: center
 }
 
@@ -1873,7 +1873,7 @@ form .has-error .btn-primary {
 }
 
 .couple-name {
-    font-family: Pacifico, 'Noto Sans KR', cursive;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
     font-size: 41px;
     padding-top: 100px;
     color: #FFF;
@@ -1888,7 +1888,7 @@ form .has-error .btn-primary {
 
 #counting-down {
     color: #FFF;
-    font-family: Pacifico, 'Noto Sans KR';
+    font-family: 'Nanum Gothic', 'Noto Sans KR';
     transform: rotate(-10deg);
     margin-top: 0;
     margin-bottom: 25px
@@ -1913,7 +1913,7 @@ form .has-error .btn-primary {
     border: none;
     background-color: transparent;
     color: #FFF;
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     font-size: 13px
 }
 
@@ -1949,10 +1949,10 @@ footer .image-divider.fixed-height {
 
 #thank-you {
     color: #FFF;
-    font-family: Pacifico;
-    -ms-transform: rotate(-10deg);
+    font-family: 'Nanum Myeongjo';
+    /* -ms-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    transform: rotate(-10deg); */
     margin-top: 40px;
     margin-bottom: 25px
 }
@@ -1963,7 +1963,7 @@ footer .image-divider.fixed-height {
 }
 
 #footer-couple-name {
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     font-size: 20px;
     color: #FFF;
     letter-spacing: 3px;
@@ -1994,7 +1994,7 @@ footer .image-divider.fixed-height {
 }
 
 #invited {
-    font-family: Pacifico, 'Noto Sans KR', cursive;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', cursive;
     font-size: 36px;
     margin-top: 70px
 }
@@ -2016,14 +2016,14 @@ footer .image-divider.fixed-height {
 }
 
 .his-her-name .last-name {
-    font-family: Pacifico, cursive;
+    font-family: 'Nanum Gothic', cursive;
     font-size: 24px;
     display: block;
     margin-top: 0
 }
 
 .story-date .date-only, .story-date .month-year {
-    font-family: Oswald, 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
     color: #FFF
 }
 
@@ -2146,7 +2146,7 @@ footer .image-divider.fixed-height {
 h2#dont-miss-it-title {
     font-size: 42px;
     margin-bottom: 30px;
-    font-family: Pacifico, cursive
+    font-family: 'Nanum Gothic', cursive
 }
 
 .circle-countdown {
@@ -2157,7 +2157,7 @@ h2#dont-miss-it-title {
 .circle-countdown.is-countdown {
     background-color: transparent;
     border: none;
-    font-family: Oswald, 'Noto Sans KR', sans-serif
+    font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif
 }
 
 .circle-countdown .countdown-amount {
@@ -2450,7 +2450,7 @@ button.mfp-arrow, button.mfp-close {
         margin: auto
     }
     .story-date .month-year {
-        font-family: Oswald, 'Noto Sans KR', sans-serif;
+        font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
         font-size: 16px;
         color: #FFF
     }
@@ -2637,7 +2637,7 @@ button.mfp-arrow, button.mfp-close {
         #thank-you {
             text-align: center;
             color: #FFF;
-            font-family: Pacifico;
+            font-family: 'Nanum Gothic';
             -ms-transform: rotate(-10deg);
             -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
@@ -2650,7 +2650,7 @@ button.mfp-arrow, button.mfp-close {
             line-height: 35px
         }
         #footer-couple-name {
-            font-family: Oswald, 'Noto Sans KR', sans-serif;
+            font-family: 'Nanum Gothic', 'Noto Sans KR', sans-serif;
             font-size: 15px;
             color: #FFF;
             letter-spacing: 3px;

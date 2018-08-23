@@ -10,6 +10,10 @@
 
 #main-slider {
     height: 100vh;
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
 }
 
 #bg-wrapper {
@@ -17,10 +21,6 @@
     background-image: url(../images/title.jpg);
     background-position: top center;
     background-size: cover;
-    transition: height 1000000s ease;
-    -webkit-transition: height 1000000s ease;
-    -moz-transition: height 1000000s ease;
-    -o-transition: height 1000000s ease;
 }
 
 #where-when .when-where-banner {

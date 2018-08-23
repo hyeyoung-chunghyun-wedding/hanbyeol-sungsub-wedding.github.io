@@ -8,6 +8,14 @@
     --after-heart: rgb(255, 60, 60);
 }
 
+
+.bg-wrapper {
+    min-height: 100%;
+    background-image: url(../images/title.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
 #where-when .when-where-banner {
     margin-top: 20px;
 }
@@ -1922,7 +1930,7 @@ footer .image-divider.fixed-height {
     #content {
         margin-top: 0px !important;
     }
-    
+
     .when-where-section {
         margin-bottom: 0px !important;
     }

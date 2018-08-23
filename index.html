@@ -163,18 +163,6 @@
 
 
 <body class="outside-bottom-bar-page">
-    <div id="preloader">
-        <div class="alignment">
-            <div class="v-align center-middle">
-                <div class="heart-animation">
-                    <i class="de-icon-heart"></i>
-                </div>
-                <div class="heart-animation-reverse">
-                    <i class="de-icon-heart"></i>
-                </div>
-            </div>
-        </div>
-    </div>
     <section id="main-slider" class="flexslider fullscreen">
         <div class="slide-title-outter-wrapper">
             <div class="slide-title-inner-wrapper">
@@ -369,47 +357,47 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/1.jpg" onclick="openPhotoSwipe(0)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/1.jpg" onclick="openPhotoSwipe(0)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/2.jpg" onclick="openPhotoSwipe(1)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/2.jpg" onclick="openPhotoSwipe(1)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/3.jpg" onclick="openPhotoSwipe(2)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/3.jpg" onclick="openPhotoSwipe(2)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/4.jpg" onclick="openPhotoSwipe(3)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/4.jpg" onclick="openPhotoSwipe(3)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/5.jpg" onclick="openPhotoSwipe(4)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/5.jpg" onclick="openPhotoSwipe(4)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/6.jpg" onclick="openPhotoSwipe(5)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/6.jpg" onclick="openPhotoSwipe(5)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/7.jpg" onclick="openPhotoSwipe(6)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/7.jpg" onclick="openPhotoSwipe(6)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/8.jpg" onclick="openPhotoSwipe(7)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/8.jpg" onclick="openPhotoSwipe(7)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="photo-item frame-border animation fadeIn">
-                            <img src="./images/9.jpg" onclick="openPhotoSwipe(8)" alt="" class="hover-animation">
+                            <img src="" data-original="./images/9.jpg" onclick="openPhotoSwipe(8)" alt="" class="hover-animation lazy">
                         </div>
                     </div>
                 </div>
@@ -496,26 +484,15 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="js/pace/pace.min.js"></script> -->
-    <!-- <script src="js/bootstrap/bootstrap.js"></script> -->
-    <!-- <script src="js/modernizr/modernizr.js"></script> -->
-    <!-- <script src="js/devicejs/device.js"></script> -->
-    <!-- <script src="js/tinynav/tinynav.min.js"></script> -->
-    <!-- <script src="js/smoothscroll/jquery.smooth-scroll.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('img.lazy').lazyload();
+		});
+	</script>
     <script src="js/flexslider/jquery.flexslider.js"></script>
-    <!-- <script src="js/sticky/jquery.sticky.js"></script> -->
-    <!-- <script src="js/waypoint/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="js/jquery-ui-widget/jquery.ui.widget.js"></script> -->
-    <!-- <script src="js/jquery-doubletaptogo/jquery.dcd.doubletaptogo.js"></script> -->
-    <!-- <script src="js/vide/jquery.vide.js"></script> -->
-    <!-- <script src="js/stellar/jquery.stellar.js"></script> -->
-    <!-- <script src="js/masonry/masonry.pkgd.min.js"></script> -->
-    <!-- <script src="js/magnific-popup/jquery.magnific-popup.js"></script> -->
-    <!-- <script src="js/owlcarousel/owl.carousel.js"></script> -->
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/main-slider-fade.js"></script>
-    <!-- <script src="js/jquery.scrolldepth.min.js"></script> -->
-    <!-- <script>jQuery(function () { jQuery.scrollDepth(); });</script> -->
 </body>
 
 </html>

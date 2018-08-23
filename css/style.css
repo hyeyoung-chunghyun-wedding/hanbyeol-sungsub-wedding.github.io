@@ -8,6 +8,10 @@
     --after-heart: rgb(255, 60, 60);
 }
 
+#main-slider {
+    height: 100vh;
+}
+
 
 .bg-wrapper {
     min-height: 100%;

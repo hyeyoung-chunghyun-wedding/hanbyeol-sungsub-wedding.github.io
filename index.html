@@ -136,6 +136,14 @@
         }
 
         window.onload = function () {
+            var bg = $("#bg-wrapper");
+
+            function resizeBackground() {
+                bg.height($(window).height());
+            }
+
+            $(window).resize(resizeBackground);
+            resizeBackground();
             createMap();
         }
     </script>
@@ -185,7 +193,7 @@
             </li>
         </ul> -->
 
-        <div class="bg-wrapper"></div>
+        <div id="bg-wrapper"></div>
 
         <header id="nav-header">
             <nav id="nav-bar" class="bottom-bar outside fluid-width block-color nav-center sticky-nav animation fadeIn">

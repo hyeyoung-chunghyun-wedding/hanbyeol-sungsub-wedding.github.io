@@ -17,10 +17,6 @@
 
     <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a7f8a0d9245932725b84c1878e3af3cb"></script>
     <script>
-        function sizeBackground() {
-            background.style.height = screen.height;
-        }
-
         // 모바일 에이전트 구분
         var isMobile = {
             Android: function () {
@@ -141,16 +137,6 @@
 
         window.onload = function () {
             createMap();
-            var background = document.getElementById('bg-wrapper');
-
-            // Fix background image jump on mobile
-            if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-                background.style.top = 'auto';
-                background.style.bottom = 0;
-
-                window.onresize = sizeBackground;
-                sizeBackground();
-            }
         }
     </script>
 

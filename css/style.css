@@ -1,5 +1,21 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@media (max-device-aspect-ratio: 3/4) {
+    height: calc(100vw * 1.333 - 9%);
+}
+
+@media (max-device-aspect-ratio: 2/3) {
+    height: calc(100vw * 1.5 - 9%);
+}
+
+@media (max-device-aspect-ratio: 10/16) {
+    height: calc(100vw * 1.6 - 9%);
+}
+
+@media (max-device-aspect-ratio: 9/16) {
+    height: calc(100vw * 1.778 - 9%);
+}
+
 :root {
     --border-color: #66a5ad;
     --title-color: #07575b;
@@ -11,7 +27,6 @@
 #main-slider {
     height: 100vh;
 }
-
 
 .bg-wrapper {
     min-height: 100%;
@@ -762,7 +777,6 @@ img.with-border {
 .slide-title.align-bottom {
     vertical-align: bottom
 }
-
 
 .slide-overlay {
     background-color: #000;
@@ -1575,7 +1589,6 @@ a:hover .de-icon.effect3 {
     transform: rotate(7deg) scale(1.1)
 }
 
-
 .masonry-col.w100 {
     width: 100%
 }
@@ -1792,9 +1805,9 @@ form .btn-primary {
 
 select option {
     padding: 4px 0!important
-}ㄷ
+}
 
-option {
+ㄷ option {
     color: #747474
 }
 
@@ -1843,6 +1856,7 @@ footer .image-divider.fixed-height {
     width: 75%;
     vertical-align: top
 }
+
 /* 
 #invited {
     font-family: 'Jua', 'Noto Sans KR', cursive;
@@ -1859,8 +1873,6 @@ footer .image-divider.fixed-height {
 #invitation {
     padding: 140px 0
 }
-
-
 
 .arrow-left, .arrow-right {
     width: 0;
@@ -1896,7 +1908,6 @@ footer .image-divider.fixed-height {
 #gallery-section .photo-item {
     margin-bottom: 30px
 }
-
 
 #bridesmaid-section, #gift-section, #groomsmen-section, #rsvp-section {
     padding: 140px 0
@@ -1934,7 +1945,6 @@ footer .image-divider.fixed-height {
     #content {
         margin-top: 0px !important;
     }
-
     .when-where-section {
         margin-bottom: 0px !important;
     }
@@ -2181,7 +2191,6 @@ footer .image-divider.fixed-height {
         #map {
             height: 350px;
         }
-
         .banner-text.withlove {
             margin-top: 60px;
         }
